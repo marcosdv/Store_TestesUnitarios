@@ -6,7 +6,7 @@ namespace Store.Tests.Entities;
 [TestClass]
 public class OrderTests
 {
-    private readonly Custumer _custumer = new Custumer("Bruce Wayne", "bat@man.com");
+    private readonly Customer _custumer = new Customer("Bruce Wayne", "bat@man.com");
     private readonly Product _product = new Product("Produto 1", 10, true);
     private readonly Discount _discount = new Discount(10, DateTime.Now.AddDays(5));
 
