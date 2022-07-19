@@ -32,7 +32,10 @@ public class OrderHandler : Notifiable, IHandler<CreateOrderCommand>
         //Fail Fast Validation
         command.Validate();
         if (command.Invalid)
+        {
+            AddNotifications(command.Notifications);
             return new GenericCommandResult(false, "Pedido inválido", command.Notifications);
+        }
 
         //Recupera cliente
         var customer = _customerRepository.Get(command.Custumer);
@@ -53,7 +56,7 @@ public class OrderHandler : Notifiable, IHandler<CreateOrderCommand>
         }
 
         //Agrupa as notificacoes
-        AddNotifications(order.Notifications);
+        AddNotifications(command, order);
 
         //se deu algum erro
         if (Invalid)
