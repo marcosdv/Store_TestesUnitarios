@@ -12,13 +12,13 @@
 - [x] Analisar código legado e identificar problemas
 - [x] Aprender a refatorar e reescrever aplicações legadas
 - [x] Modelar o domínio da aplicação
-- [ ] Criar e testar validações das entidades do domínio
-- [ ] Criar queries e implementar testes de unidade para queries
-- [ ] Criar commands e implementar testes de unidade para commands
-- [ ] Criar handlers e implementar testes de unidade para handlers
-- [ ] Criar utilitários para seu projeto
-- [ ] Implementar o Repository Pattern
-- [ ] Criar/mockar repositórios de testes
+- [x] Criar e testar validações das entidades do domínio
+- [x] Criar queries e implementar testes de unidade para queries
+- [x] Criar commands e implementar testes de unidade para commands
+- [x] Criar handlers e implementar testes de unidade para handlers
+- [x] Criar utilitários para seu projeto
+- [x] Implementar o Repository Pattern
+- [x] Criar/mockar repositórios de testes
 
 ### Tecnologias
 
